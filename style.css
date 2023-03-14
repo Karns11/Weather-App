@@ -1,0 +1,70 @@
+.app {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: rgba(0, 0, 0,0.4);
+    color: #fff;
+    overflow-y: auto;
+}
+
+.app::before {
+    content: '';
+    background: url('./mountain.jpeg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.input-bar {
+    border: 2px solid black;
+    border-radius: 1.5rem;
+    height: 2.75rem;
+    box-shadow: 0 0 8px black;
+    background: transparent;
+    color: #fff;
+}
+
+.input-bar::placeholder {
+    text-align: center;
+    color: #fff;
+}
+
+.input-bar {
+    text-align: center;
+    color: #fff;
+}
+
+.input-bar:focus {
+    background-color: transparent;
+    color: #fff;
+    outline-color: black;
+}
+
+.weather-card {
+    border: 2px solid black;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 8px black;
+    background: transparent;
+}
+
+.card-body {
+    height: 50%;
+}
+
+i {
+    font-size: 100px;
+}
+
+a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #fff;
+    opacity: 80%;
+}
