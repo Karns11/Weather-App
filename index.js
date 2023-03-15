@@ -47,7 +47,7 @@ function Card({ data }) {
                     <h1 className='py-3'>{data.name}</h1>
                     <h2 className='py-3'>{data.main && kelvinToF(data.main.temp)}</h2>
                     {data.weather && data.weather[0].description.includes('cloud') && (<i className='fas fa-cloud py-3'></i>)}
-                    {data.weather && data.weather[0].description.includes('rain') && (<i className='fas fa-cloud-rain py-3'></i>)}
+                    {data.weather && (data.weather[0].description.includes('rain') || data.weather[0].description.includes('mist')) && (<i className='fas fa-cloud-rain py-3'></i>)}
                     {data.weather && data.weather[0].description.includes('snow') && (<i className='fas fa-snowflake py-3'></i>)}
                     {data.weather && data.weather[0].description.includes('clear') && (<i className='fas fa-sun py-3'></i>)}
                     <h3 className='py-3'>{data.weather && data.weather[0].description}</h3>
