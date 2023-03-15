@@ -24,7 +24,7 @@ function App() {
                 <div className='container text-center pt-5'>
                     <p>Developed by <a href='https://www.linkedin.com/in/nathan-karns-63820a216/'>Nathan Karns</a></p>
                 </div>
-                <div className='container text-center pt-5'>
+                <div className='container text-center'>
                     <p>Please note: this app only searches by city and if there are multiple cities with the same name, it will only display data for the first city that the api finds with that name.</p>
                 </div>
             </div>
